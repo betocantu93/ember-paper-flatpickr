@@ -1,7 +1,7 @@
 ember-paper-flatpickr
 ==============================================================================
 
-[Short description of the addon.]
+Enhance ember-paper paper-input with ember-flatpickr,this addon depends on ember-paper and ember-flatpickr
 
 Installation
 ------------------------------------------------------------------------------
