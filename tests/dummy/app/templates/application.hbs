@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember</h2>
+<PaperFlatpickr @allowClear={{true}} class="flex" as |Flatpickr|>
+  <Flatpickr.input
+    @disableMobile={{true}}
+    @allowInput={{false}}
+    @altInput={{true}}
+    @appendDataInput={{false}}
+    @classNames={{classString}}
+    @format="MMMM D, YYYY"
+    @value={{readonly dateSelected}}
+    @required={{true}}
+    @enableTime={{false}}
+    @onChange={{action (mut dateSelected)}}
+    @locale="es"
+    @label="otherheyeh"
+    @placeholder="Heyhey"
+    @enableTime={{true}}
+   />
 
-{{outlet}}
+</PaperFlatpickr>
