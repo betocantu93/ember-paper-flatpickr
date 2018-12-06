@@ -1,0 +1,1 @@
+export { default } from 'ember-paper-flatpickr/components/paper-flatpickr-input';

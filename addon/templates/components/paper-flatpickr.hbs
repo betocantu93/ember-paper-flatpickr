@@ -1,0 +1,37 @@
+<div class="layout" style="position: relative;" ...attributes>
+  
+{{yield 
+  (hash 
+    input=(
+      component "paper-flatpickr-input"
+      registerInput=(action "registerInput")
+      unregisterInput=(action "unregisterInput")
+      class="flex"
+    )
+  )
+}}
+
+{{#if (and this.input.value @allowClear (not this.input.disabled) this.input.disableMobile) }}
+  <button
+    onmouseup={{action "clear"}}
+    style="
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 20px;
+      text-align: center;
+      border: none;
+      border-radius: 50%;
+      background: 0 0;
+      padding: 0;
+      outline:0;
+      top: 20px;
+    "
+    >
+    {{paper-icon "close" }}
+  </button>
+  
+{{/if}}
+</div>
