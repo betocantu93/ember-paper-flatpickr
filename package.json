@@ -1,13 +1,23 @@
 {
   "name": "ember-paper-flatpickr",
   "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Enhance ember-paper paper-input with flatpickr via ember-flatpickr",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "datepicker",
+    "flatpickr",
+    "calendar",
+    "timepicker"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/betocantu93/ember-paper-flatpickr"
+  },
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Alberto Cantu",
+    "email": "betocantu93@gmail.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"

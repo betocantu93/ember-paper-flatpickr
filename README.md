@@ -65,7 +65,7 @@ If you don't care about `allowClear` you can just use the `paper-flatpickr-input
         @placeholder="Heyhey"
         @enableTime={{true}}
     />
-
+```
 ## Contributing
 
 ### Installation
