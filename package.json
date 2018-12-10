@@ -1,6 +1,6 @@
 {
   "name": "ember-paper-flatpickr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Enhance ember-paper paper-input with flatpickr via ember-flatpickr",
   "keywords": [
     "ember-addon",
@@ -33,7 +33,7 @@
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
     "ember-cli-htmlbars": "^3.0.0",
-    "ember-flatpickr": "github:betocantu93/ember-flatpickr#flatpickr-as-mixin"
+    "ember-flatpickr": "^2.8.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
