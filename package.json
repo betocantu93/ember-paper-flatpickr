@@ -1,6 +1,6 @@
 {
   "name": "ember-paper-flatpickr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Enhance ember-paper paper-input with flatpickr via ember-flatpickr",
   "keywords": [
     "ember-addon",
