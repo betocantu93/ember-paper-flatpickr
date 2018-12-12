@@ -33,7 +33,7 @@
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
     "ember-cli-htmlbars": "^3.0.0",
-    "ember-flatpickr": "^2.8.0"
+    "ember-flatpickr": "https://github.com/betocantu93/ember-flatpickr/tree/find-host-in-included"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
