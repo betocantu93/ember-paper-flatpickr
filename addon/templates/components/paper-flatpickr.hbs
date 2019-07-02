@@ -1,4 +1,4 @@
-<div class="layout" style="position: relative;" ...attributes>
+<div class="layout layout-align-center-center" style="position: relative;" ...attributes>
   
 {{yield 
   (hash 
@@ -6,7 +6,7 @@
       component "paper-flatpickr-input"
       registerInput=(action "registerInput")
       unregisterInput=(action "unregisterInput")
-      class="flex"
+      class="layout layout-align-center-center flex"
     )
   )
 }}
@@ -27,7 +27,6 @@
       background: 0 0;
       padding: 0;
       outline:0;
-      top: 15px;
     "
     >
     {{paper-icon "close" }}
