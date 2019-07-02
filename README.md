@@ -16,6 +16,17 @@ Currently this addon is using a fork of `ember-flatpickr`.
 
 ## Installation
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+
+Installation
+------------------------------------------------------------------------------
+
 ```
 ember install ember-paper-flatpickr
 ```
@@ -90,8 +101,8 @@ If you don't care about `allowClear` you can just use the `paper-flatpickr-input
 
 - `ember serve`
 - Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 ## License
 
