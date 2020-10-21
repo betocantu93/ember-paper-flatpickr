@@ -59,8 +59,8 @@ Any `template.hbs`, you should pass all the `paper-input` options and `flatpickr
 
 If you don't care about `allowClear` you can just use the `paper-flatpickr-input` directly
 
-``` 
-    <PaperFlatPickrInput
+```
+    <PaperFlatpickrInput
         @disableMobile={{true}}
         @allowInput={{false}}
         @altInput={{true}}
