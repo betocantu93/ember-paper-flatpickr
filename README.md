@@ -44,7 +44,8 @@ Any `template.hbs`, you should pass all the `paper-input` options and `flatpickr
             @altInput={{true}}
             @appendDataInput={{false}}
             @classNames={{classString}}
-            @format="MMMM D, YYYY"
+            @altFormat="MMMM D, YYYY"
+            @dateFormat="Y-m-d"
             @value={{readonly dateSelected}}
             @required={{true}}
             @enableTime={{false}}
@@ -52,7 +53,6 @@ Any `template.hbs`, you should pass all the `paper-input` options and `flatpickr
             @locale="es"
             @label="otherheyeh"
             @placeholder="Heyhey"
-            @enableTime={{true}}
         />
     </PaperFlatpickr>
 ```
@@ -66,7 +66,8 @@ If you don't care about `allowClear` you can just use the `paper-flatpickr-input
         @altInput={{true}}
         @appendDataInput={{false}}
         @classNames={{classString}}
-        @format="MMMM D, YYYY"
+        @altFormat="MMMM D, YYYY"
+        @dateFormat="Y-m-d"
         @value={{readonly dateSelected}}
         @required={{true}}
         @enableTime={{false}}
@@ -74,7 +75,6 @@ If you don't care about `allowClear` you can just use the `paper-flatpickr-input
         @locale="es"
         @label="otherheyeh"
         @placeholder="Heyhey"
-        @enableTime={{true}}
     />
 ```
 ## Contributing
