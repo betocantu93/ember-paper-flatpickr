@@ -104,6 +104,7 @@ export default PaperInput.extend(FlatpickrMixin, {
       });
     }
   ),
+
   _attributeHasChanged(changedAttrs, attr, callback) {
     if (changedAttrs && changedAttrs[attr]) {
       const [oldAttr, newAttr] = changedAttrs[attr];
@@ -114,7 +115,9 @@ export default PaperInput.extend(FlatpickrMixin, {
   },
 
   _onChange(selectedDates, dateStr, instance) {
-    //let handleInput emit onChange
+    if (this.onChange instanceof Function) {
+      invokeAction(this, "onChange", selectedDates, dateStr, instance);
+    }
   },
 
   _onOpen(selectedDates, dateStr, instance) {
@@ -122,6 +125,7 @@ export default PaperInput.extend(FlatpickrMixin, {
     this.set("isTouched", true);
     this.notifyValidityChange();
   },
+
   _onClose(selectedDates, dateStr, instance) {
     if (this.mode === "range" && selectedDates.length < 2) {
       invokeAction(this, "onChange", null);
@@ -141,8 +145,9 @@ export default PaperInput.extend(FlatpickrMixin, {
     },
 
     handleInput(e) {
+/*
       let flatpickr = this.field._flatpickr;
-      
+
       invokeAction(
         this,
         "onChange",
@@ -150,6 +155,7 @@ export default PaperInput.extend(FlatpickrMixin, {
         flatpickr.altInput.value || flatpickr.input.value,
         flatpickr
       );
+ */
       // setValue below ensures that the input value is the same as this.value
       run.next(() => {
         if (this.isDestroyed) {
@@ -166,6 +172,7 @@ export default PaperInput.extend(FlatpickrMixin, {
       this.notifyValidityChange();
     }
   },
+
   willDestroyElement() {
     this._super(...arguments);
     invokeAction(this, "unregisterInput");
